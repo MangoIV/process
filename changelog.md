@@ -1,5 +1,10 @@
 # Changelog for [`process` package](http://hackage.haskell.org/package/process)
 
+## 1.6.26.3 *May 2026*
+
+* Fix a bug where executables built against process running a toolchain that builds for MacOS 26 and MacOS 15
+  caused segfaults when running on MacOS 15 due to NULL symbols ([#363](https://github.com/haskell/process/pull/363))
+
 ## 1.6.26.1 *May 2025*
 
 * Regenerate `configure` script (#343)
